@@ -11,10 +11,10 @@ using namespace std;
 
 class Character
 {
-public:
+private:
     string name, type;
     unsigned int defence, attack, speed, choose;
-    
+public:
     void printData() const
     {
         cout << "I'm a " << type << " and my name is " << name;
@@ -69,6 +69,11 @@ int main()
     c3.printData();
     
     cout<<endl;
+    
+    cout<<"Size of object 1 is: "<<sizeof(c1)<<" bytes"<<endl;
+    cout<<"Size of object 2 is: "<<sizeof(c2)<<" bytes"<<endl;
+    cout<<"Size of object 3 is: "<<sizeof(c3)<<" bytes"<<endl;
+    
     
     return 0;
 }
